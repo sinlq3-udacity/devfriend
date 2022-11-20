@@ -1,0 +1,37 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Sample Page",
+            "horizontalAlignment": "Center",
+            "wrap": true,
+            "style": "heading"
+        },
+        {
+            "type": "Input.Text",
+            "style": "text",
+            "id": "folder",
+            "isRequired": true,
+            "isMultiline": false,
+            "label": "Folder",
+            "value":"${folder}"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Render",
+            "data": {
+                "$template_file":"/sample_page/sample.html",
+                "$template_payload":"template_payload.json",
+                "$language":"html",
+                "folder": "folder"
+            }
+        }
+    ]
+}
