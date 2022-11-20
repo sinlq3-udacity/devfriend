@@ -36,7 +36,7 @@
             "type": "Action.Submit",
             "title": "Render",
             "data": {
-                "$template_file":"/search_column_name/sample.sql",
+                "$template_file":"./search_column_name/sample.sql",
                 "$template_payload":"template_payload.json",
                 "$language":"sql",
                 "table": "table",

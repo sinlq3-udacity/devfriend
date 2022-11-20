@@ -57,7 +57,7 @@
             "style": "text",
             "id": "data",
             "isRequired": true,
-            "isMultiline": false,
+            "isMultiline": true,
             "label": "Data",
             "value": "${data}"
         }
