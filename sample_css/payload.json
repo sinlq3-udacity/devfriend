@@ -27,7 +27,7 @@
             "type": "Action.Submit",
             "title": "Render",
             "data": {
-                "$template_file":"/sample_css/sample.css",
+                "$template_file":"./sample_css/sample.css",
                 "$template_payload":"template_payload.json",
                 "$language":"css",
                 "color": "color"

@@ -1,9 +1,9 @@
 async function load(folder,callback,loaded) {     
     callback=callback||cardAction;   
-    var payload = await fetch(`/${folder}/payload.json`).then(x => x.json());
+    var payload = await fetch(`./${folder}/payload.json`).then(x => x.json());
 
     var context = {
-        $root: await fetch(`/${folder}/data.json`).then(x => x.json())
+        $root: await fetch(`./${folder}/data.json`).then(x => x.json())
     };
 
     // Create a Template instance from the template payload

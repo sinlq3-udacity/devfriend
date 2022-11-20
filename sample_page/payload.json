@@ -27,7 +27,7 @@
             "type": "Action.Submit",
             "title": "Render",
             "data": {
-                "$template_file":"/sample_page/sample.html",
+                "$template_file":"./sample_page/sample.html",
                 "$template_payload":"template_payload.json",
                 "$language":"html",
                 "folder": "folder"

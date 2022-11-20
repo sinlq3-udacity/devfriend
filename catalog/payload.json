@@ -9,7 +9,7 @@
                 {
                     "type": "Action.OpenUrl",
                     "title": "${title}",
-                    "url": "/template.html?template=${folder}"
+                    "url": "./template.html?template=${folder}"
                 }
             ],
             "$data": "${$root['templates']}"
