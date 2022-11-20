@@ -67,9 +67,9 @@
             "type": "Action.Submit",
             "title": "Render",
             "data": {
-                "$template_file": "./jquery_ajax/sample.html",
+                "$template_file": "./jquery_ajax/sample.js",
                 "$template_payload": "template_payload.json",
-                "$language": "html",
+                "$language": "js",
                 "url": "url",
                 "method": "method",
                 "data":"data"
