@@ -11,7 +11,7 @@
             {
                 static void Main(string[] args)
                 {
-                    string message = "Hello World!!";
+                    string message = "${message}";
         
                     Console.WriteLine(message);
                 }
