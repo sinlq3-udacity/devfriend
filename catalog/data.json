@@ -16,6 +16,18 @@
         {
             "title": "Sample Page",
             "folder": "sample_page"
+        },
+        {
+            "title": "Search Column Name",
+            "folder": "search_column_name"
+        },
+        {
+            "title": "Empty jQuery Document Ready",
+            "folder": "jquery_document_ready"
+        },
+        {
+            "title": "jQuery Ajax Request",
+            "folder": "jquery_ajax"
         }
     ]
 }

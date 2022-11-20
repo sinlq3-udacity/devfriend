@@ -8,8 +8,8 @@
 </head>
 <body>
     <script>        
-        load('${folder}');
-        async function cardAction(action){
+        load('${folder}',customAction);
+        async function customAction(action){
             console.log(action);
         }
     </script>
