@@ -1,3 +1,21 @@
-{  
-    "message":"Hello World"
+{
+    "templates": [
+        {
+            "title": "Sample CS",
+            "folder": "sample_cs"
+        },
+        {
+            "title": "Sample SQL",
+            "folder": "sample_sql"
+        },
+        {
+            "title": "Sample CSS",
+            "folder": "sample_css"
+        }
+        ,
+        {
+            "title": "Sample Page",
+            "folder": "sample_page"
+        }
+    ]
 }

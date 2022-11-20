@@ -1,37 +1,18 @@
 {
-    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
     "version": "1.5",
     "body": [
         {
-            "type": "TextBlock",
-            "size": "Medium",
-            "weight": "Bolder",
-            "text": "Sample C# Code",
-            "horizontalAlignment": "Center",
-            "wrap": true,
-            "style": "heading"
-        },
-        {
-            "type": "Input.Text",
-            "style": "text",
-            "id": "message",
-            "isRequired": true,
-            "isMultiline": false,
-            "label": "Message",
-            "value":"${message}"
-        }
-    ],
-    "actions": [
-        {
-            "type": "Action.Submit",
-            "title": "Render",
-            "data": {
-                "$template_file":"/sample_cs/sample.cs",
-                "$template_payload":"template_payload.json",
-                "$language":"csharp",
-                "message": "message"
-            }
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "${title}",
+                    "url": "/template.html?template=${folder}"
+                }
+            ],
+            "$data": "${$root['templates']}"
         }
     ]
 }

@@ -1,4 +1,5 @@
-async function load(folder) {        
+async function load(folder,callback,loaded) {     
+    callback=callback||cardAction;   
     var payload = await fetch(`/${folder}/payload.json`).then(x => x.json());
 
     var context = {
@@ -17,11 +18,16 @@ async function load(folder) {
     });
     // Set the adaptive card's event handlers. onExecuteAction is invoked
     // whenever an action is clicked in the card
-    adaptiveCard.onExecuteAction = renderData;
+    adaptiveCard.onExecuteAction = callback;
     // Parse the card payload
     adaptiveCard.parse(card);
     // Render the card to an HTML element:
     var renderedCard = adaptiveCard.render();
     // And finally insert it somewhere in your page:
-    document.body.prepend(renderedCard);           
+    document.body.prepend(renderedCard); 
+    if(loaded)loaded();
 };  
+
+async function cardAction(action){
+    console.log(action);
+}

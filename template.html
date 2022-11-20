@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/adaptivecards@2.9.0/dist/adaptivecards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/adaptive-expressions@4.18.0/lib/browser.min.js"></script>
     <script src="https://unpkg.com/adaptivecards-templating/dist/adaptivecards-templating.min.js"></script>
-
+    <script src="/core.js"></script>
 </head>
 
 <body>
@@ -40,51 +40,13 @@
             code.innerHTML=hljs.highlight(textEl.value,{language:data.$language}).value
             document.body.removeChild(renderedCard)
         }
-        
-        async function load(folder) {
-            folder=folder||'sample_cs';
-            // Author a card
-            // In practice you'll probably get this from a service
-            // see http://adaptivecards.io/samples/ for inspiration
-
-            var payload = await fetch(`/${folder}/payload.json`).then(x => x.json());
-
-            var context = {
-                $root: await fetch(`/${folder}/data.json`).then(x => x.json())
-            };
-
-            // Create a Template instance from the template payload
-            var template = new ACData.Template(payload);
-            var card = template.expand(context);
-
-            // Create an AdaptiveCard instance
-            var adaptiveCard = new AdaptiveCards.AdaptiveCard();
-
-            // Set its hostConfig property unless you want to use the default Host Config
-            // Host Config defines the style and behavior of a card
-            adaptiveCard.hostConfig = new AdaptiveCards.HostConfig({
-                fontFamily: "Segoe UI, Helvetica Neue, sans-serif"
-                // More host config options
-            });
-
-            // Set the adaptive card's event handlers. onExecuteAction is invoked
-            // whenever an action is clicked in the card
-            adaptiveCard.onExecuteAction = renderData;
-            // Parse the card payload
-            adaptiveCard.parse(card);
-
-            // Render the card to an HTML element:
-            var renderedCard = adaptiveCard.render();
-            // And finally insert it somewhere in your page:
-            document.body.prepend(renderedCard);
-            renderData({data:{...payload.actions[0].data,...context.$root}})
-        };
         const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        var template = urlParams.get('template')||'sample_cs';
-       load(template);
-
-
+            const urlParams = new URLSearchParams(queryString);
+            var template = urlParams.get('template')||'sample_cs';
+        load(template,renderData,()=>{
+            document.querySelector('button').click();
+        });
+      
     </script>
 
 </body>
