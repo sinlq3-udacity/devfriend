@@ -1,6 +1,6 @@
 {  
     "from": "Sin",
-    "to": "<Name>",
+    "to": "Name",
     "department": "Software Development Department",
     "company": "FPT Software",
     "position":"Solution Architect"
