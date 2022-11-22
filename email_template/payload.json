@@ -18,7 +18,7 @@
             "id": "from",
             "isRequired": true,
             "isMultiline": false,
-            "label": "Message",
+            "label": "From",
             "value":"${from}"
         },
         {
@@ -27,7 +27,7 @@
             "id": "to",
             "isRequired": true,
             "isMultiline": false,
-            "label": "Message",
+            "label": "To",
             "value":"${to}"
         },
         {
@@ -36,7 +36,7 @@
             "id": "department",
             "isRequired": true,
             "isMultiline": false,
-            "label": "Message",
+            "label": "Department",
             "value":"${department}"
         }
         ,{
@@ -45,7 +45,7 @@
             "id": "company",
             "isRequired": true,
             "isMultiline": false,
-            "label": "Message",
+            "label": "Company",
             "value":"${company}"
         }
     ],
