@@ -1,11 +1,73 @@
 Dear ${to}
 
-I am {from} from ${department}, company ${company}
-I am writing to 
+I am ${from} from company ${company}.
+I am writing this email with the purpose of ... 
 
 
-
-
-Best Regards
+Best Regards!
 ${from}
 
+${position}
+${company}
+
+--------------------------------------------------------------------------
+
+Dear ${to}
+
+I'm ${from}, in charge of the ${department} at ${company}
+I am writing this email with the purpose of ... 
+
+
+Best Regards!
+${from}
+
+${position}
+${company}
+
+
+--------------------------------------------------------------------------
+
+
+Dear ${to}
+
+I'm the one who talked to you on the phone yesterday
+I am writing this email with the purpose of ... 
+
+
+
+Best Regards!
+${from}
+
+${position}
+${company}
+
+
+--------------------------------------------------------------------------
+
+Dear ${to}
+
+I'm ${from}, responsible for the ${department} at ${company}
+I am writing this email with the purpose of ... 
+
+
+
+Best Regards!
+${from}
+
+${position}
+${company}
+
+--------------------------------------------------------------------------
+
+Dear ${to}
+
+I was referred to you by my supervisor.
+I am writing this email with the purpose of ... 
+
+
+
+Best Regards!
+${from}
+
+${position}
+${company}
