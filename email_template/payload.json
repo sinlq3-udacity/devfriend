@@ -30,6 +30,15 @@
             "label": "To",
             "value":"${to}"
         },
+        ,{
+            "type": "Input.Text",
+            "style": "text",
+            "id": "position",
+            "isRequired": true,
+            "isMultiline": false,
+            "label": "Position",
+            "value":"${position}"
+        },
         {
             "type": "Input.Text",
             "style": "text",
@@ -60,7 +69,8 @@
                 "from": "from",
                 "to": "to",
                 "department": "department",
-                "company": "company"
+                "company": "company",
+                "position": "position"
             }
         }
     ]
