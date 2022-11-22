@@ -28,6 +28,10 @@
         {
             "title": "jQuery Ajax Request",
             "folder": "jquery_ajax"
+        },
+        {
+            "title": "Email Template",
+            "folder": "email_template"
         }
     ]
 }

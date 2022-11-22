@@ -1,0 +1,11 @@
+Dear ${to}
+
+I am {from} from ${department}, company ${company}
+I am writing to 
+
+
+
+
+Best Regards
+${from}
+
