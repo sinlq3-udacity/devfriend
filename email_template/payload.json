@@ -29,7 +29,7 @@
             "isMultiline": false,
             "label": "To",
             "value":"${to}"
-        },
+        }
         ,{
             "type": "Input.Text",
             "style": "text",
