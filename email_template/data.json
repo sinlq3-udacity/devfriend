@@ -1,3 +1,6 @@
 {  
-    "message":"Hello World"
+    "from": "from",
+    "to": "to",
+    "department": "department",
+    "company": "company"
 }
